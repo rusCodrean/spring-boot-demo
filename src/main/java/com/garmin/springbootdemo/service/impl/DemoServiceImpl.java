@@ -15,13 +15,13 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class DemoServiceImpl implements DemoService {
 
     // A runner has run the same 5km course several times. These are the recorded values for each race
+    // TODO make a database design for the below data.
     static String[] race1 = new String[]{"4:12", "4:51", "4:04", "5:00", "4:39"};
     static String[] race2 = new String[]{"4:10", "4:31", "4:04", "5:01", "5:38"};
     static String[] race3 = new String[]{"4:30", "4:41", "4:34", "4:40", "4:30"};
     static String[] race4 = new String[]{"4:42", "4:21", "4:05", "4:30", "4:51"};
     static String[] race5 = new String[]{"4:50", "4:52", "4:12", "4:50", "4:22"};
 
-    // TODO what would you change in this methods structure?
     public DreamRunDto getDreamRun(Long userId) {
         List<List<String>> allRunValues = Arrays.asList(Arrays.asList(race1), Arrays.asList(race2), Arrays.asList(race3), Arrays.asList(race4), Arrays.asList(race5));
 
@@ -56,6 +56,5 @@ public class DemoServiceImpl implements DemoService {
         return null;
     }
 
-    // TODO Create a method that reads and prints a property defined in the application.property file.
-    //  This method should run when starting the server
+    // TODO Create a method that returns a property defined in the application.property file.
 }

@@ -33,5 +33,5 @@ public class DemoController {
     }
 
     // TODO create a POST method structure that takes a request body (as json) for a specific user which is identified by a userId. Let's say
-    //  this method saves the values recorded for a race, from the above example.
+    //  this method saves the values for a user profile.
 }
