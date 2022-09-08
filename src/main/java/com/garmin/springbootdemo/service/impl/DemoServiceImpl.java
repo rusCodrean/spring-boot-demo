@@ -51,10 +51,7 @@ public class DemoServiceImpl implements DemoService {
         return dreamRunDto;
     }
 
-    // TODO write a method that returns a list of duplicate characters from a given string and add a unit test for it
-    public List<Character> getDuplicateCharacters(String word) {
-        return null;
-    }
+    // TODO write a method that finds first non-repeated character in a String. Write a Unit Test to demonstrate it works as expected.
 
     // TODO Create a method that returns a property defined in the application.property file.
 }
