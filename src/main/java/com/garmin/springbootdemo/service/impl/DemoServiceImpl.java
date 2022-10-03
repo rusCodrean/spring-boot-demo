@@ -51,11 +51,7 @@ public class DemoServiceImpl implements DemoService {
         return dreamRunDto;
     }
 
-    // TODO write a method that checks if a given number is Palindrome. Write a Unit Test to demonstrate it works as expected.
+    // TODO Find all duplicate characters in a String and count the number of occurrences. Write a Unit Test to demonstrate it works as expected.
 
     // TODO Create a method that returns a property defined in the application.property file.
-
-    // TODO write a method that finds first non-repeated character in a String. Write a Unit Test to demonstrate it works as expected.
-
-    // TODO write a method that removes all duplicates from a list of Integers. Write a Unit Test to demonstrate it works as expected.
 }
