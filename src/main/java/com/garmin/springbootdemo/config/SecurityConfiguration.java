@@ -13,7 +13,6 @@ import static org.springframework.security.config.Customizer.withDefaults;
 
 @Configuration
 public class SecurityConfiguration {
-
     private static final String USER_NAME = "user";
     private static final String PASSW = "$2a$10$qufWDkgaa7sBYyiCnxzbGOSRkMWmH0eMGsDqaDj7Ef8LGkzvvf5CO";
     // decripted passw = passw
@@ -28,7 +27,7 @@ public class SecurityConfiguration {
             .sessionManagement()
             .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 
-        http.authorizeHttpRequests((authz) -> authz.anyRequest().authenticated()).httpBasic(withDefaults());
+        http.authorizeHttpRequests(authz -> authz.anyRequest().authenticated()).httpBasic(withDefaults());
         return http.build();
     }
 
